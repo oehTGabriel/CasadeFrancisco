@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Francisco</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="source/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-fundo: #FFFAEC;
+        --color-marrom:#A16731;
+        --color-escuro: #4F4134;
+        --font-principal: "Montserrat", sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-fundo font-principal">
+    <header class="flex items-center justify-center h-40 py-4 bg-marrom shadow-lg">
+        <img class="h-full hover:scale-110 duration-300 cursor-pointer" src="assets/images/logo.png" alt="Logo da Casa de Francisco">
+    </header>
+
+    <nav class="border-b-1 border-escuro">
+        <div class="container mx-auto flex justify-between items-center py-5 bg-fundo">
+            <div class="w-full bg-marrom border-escuro border-1 rounded-full flex justify-between text-fundo py-2 px-4 basis-1/4">
+                    <input class="bg-transparent grow placeholder:text-fundo focus:outline-none" type="text" placeholder="Digite aqui...">
+                    <i class="bi bi-search ml-1"></i>
+            </div>
+        <ul class="flex items-center justify-center space-x-4 text-escuro uppercase">
+            <li><a href=""><span class="link link-underline link-underline-black">Início</span></a></li>
+            <hr class="border-escuro border-1 h-5">
+            <li><a href=""><span class="link link-underline link-underline-black">Sobre</span></a></li>
+            <hr class="border-escuro border-1 h-5">
+            <li><a href=""><span class="link link-underline link-underline-black">Contato</span></a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <section class="border-b-1 border-escuro">
+        <div class="container mx-auto flex py-10 gap-4">
+            <div class="swiper mySwiper w-[60vw] overflow-hidden rounded-lg shadow-lg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide01.jpg" alt="Slide 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide02.jpg" alt="Slide 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide03.jpg" alt="Slide 3" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="w-full flex flex-col text-left gap-2">
+                <h2 class="text-4xl text-escuro font-bold">Bem-vindo à Casa de Francisco</h2>
+                <p class="text-2xl text-escuro">A Casa de Francisco é um espaço fraterno e acolhedor, dedicado à prática da caridade à luz dos ensinamentos do Espiritismo. Há mais de 10 anos, atuamos com amor, empatia e dedicação, oferecendo apoio espiritual, social e emocional a todos que nos procuram.</p>
+                <p class="text-2xl text-escuro">Aqui, promovemos atividades de assistência social, palestras doutrinárias, atendimentos fraternos, campanhas solidárias e momentos de espiritualização. Nosso objetivo é semear o bem, aliviar dores e fortalecer corações, seguindo o exemplo de Jesus e os ensinamentos de Francisco de Assis.</p>
+                <p class="text-2xl text-escuro">Seja bem-vindo(a)! Juntos, podemos transformar vidas com amor e solidariedade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-b-1 border-escuro">
+        <div class="container mx-auto flex grid grid-cols-3 gap-5 text-escuro py-10">
+            <div class="flex flex-col items-center w-full basis-1\3 text-center gap-2">
+                <i class="bi bi-house-fill text-6xl text-marrom"></i>
+                <h2 class="text-4xl">Ajuda em casa</h2>
+                <p>Oferecemos apoio a famílias em situação de vulnerabilidade por meio de doações de alimentos, roupas, cestas básicas e visitas fraternas. Nosso trabalho é guiado pelo amor ao próximo e pelo compromisso com o bem-estar de todos.</p>
+            </div>
+            <div class="flex flex-col items-center w-full basis-1\3 text-center gap-2">
+                <i class="bi bi-calendar text-6xl text-marrom"></i>
+                <h2 class="text-4xl">Eventos</h2>
+                <p>Realizamos eventos solidários, bazares beneficentes, campanhas do agasalho e ações comunitárias. Cada atividade é uma oportunidade de união, partilha e fortalecimento dos laços entre voluntários e assistidos.</p>
+            </div>
+            <div class="flex flex-col items-center w-full basis-1\3 text-center gap-2">
+                <i class="bi bi-people-fill text-6xl text-marrom"></i>
+                <h2 class="text-4xl">Encontros</h2>
+                <p>Nossos encontros semanais promovem reflexões sobre o Evangelho, momentos de oração, palestras doutrinárias e rodas de conversa. Um espaço de escuta, acolhimento e crescimento espiritual coletivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-auto flex flex-col items-center justify-center gap-4 text-escuro py-10">
+            <h1 class="text-4xl font-bold">Como ajudar?</h1>
+            
+            <form class="flex flex-col items-center gap-4 w-full max-w-md">
+                <div class="w-full flex flex-col gap-1 text-center">
+                    <label for="nome">Nome</label>
+                <input type="text" class="border-2 border-escuro rounded-lg bg-transparente px-2 py-2 focus:outline-none ">
+                </div>
+
+                <div class="w-full flex flex-col gap-1 text-center">
+                    <label for="nome">Email</label>
+                <input type="email" class="border-2 border-escuro rounded-lg bg-transparente px-2 py-2 focus:outline-none ">
+                </div>
+
+                <div class="w-full flex flex-col gap-1 text-center">
+                    <label for="nome">Mensagem</label>
+                <textarea name="" id="" class="resize-none h-50 border-2 border-escuro rounded-lg bg-transparente px-2 py-2 focus:outline-none"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-marrom text-fundo py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <h3>&copy; Casa de Francisco 2025</h3>
+            </div>
+
+            <ul class="flex items-center justify-center space-x-4 mt-4 text-3xl">
+                <li>
+                    <a href="">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+     </script>
+</body>
+
+</html>
