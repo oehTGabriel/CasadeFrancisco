@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Francisco - Doação</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="source/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-fundo: #FFFAEC;
+        --color-marrom:#A16731;
+        --color-escuro: #4F4134;
+        --font-principal: "Montserrat", sans-serif;
+      }
+    </style>
+</head>
+
+<body class="bg-fundo font-principal">
+  <header class="flex items-center justify-center h-40 py-4 bg-marrom shadow-lg">
+    <img class="h-full hover:scale-110 duration-300 cursor-pointer" src="assets/images/logo.png"
+      alt="Logo da Casa de Francisco">
+  </header>
+
+  <section>
+    <div class="container mx-auto">
+      <div
+        class="flex flex-col items-center justify-center bg-marrom gap-1 text-fundo rounded-lg shadow-lg px-8 py-10 mt-10 w-[50%] mx-auto">
+        <div class="relative w-[75%] h-40">
+          <div id="formNome"
+            class="absolute inset-0 flex flex-col items-center justify-center transition-all duration-500">
+            <label>
+              <h2 class="text-2xl font-semibold">Nome</h2>
+            </label>
+            <input type="text"
+              class="border-2 border-fundo text-escuro rounded-full px-5 w-full bg-fundo focus:outline-none mt-2">
+          </div>
+
+          <div id="formEmail"
+            class="absolute inset-0 flex flex-col items-center justify-center opacity-0 translate-y-20 pointer-events-none transition-all duration-500">
+            <label>
+              <h2 class="text-2xl font-semibold">Email</h2>
+            </label>
+            <input type="text"
+              class="border-2 border-fundo text-escuro rounded-full px-5 w-full bg-fundo focus:outline-none mt-2">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 items-center justify-center w-[75%] text-1xl">
+          <div class="flex items-center justify-start">
+            <button id="btnVoltar"
+              class="text-left opacity-0 bg-escuro text-fundo px-4 rounded-full hover:bg-fundo hover:text-escuro duration-300"><a
+                href="">Voltar</a></button>
+          </div>
+          <div class="flex items-center gap-2 justify-center">
+            <button id="btnProximo"
+              class="bg-fundo text-marrom px-4 rounded-full hover:bg-escuro hover:text-fundo duration-300"><a
+                href="">Próximo</a></button>
+                <button id="btnSalvar"
+              class="hidden bg-fundo text-marrom px-4 rounded-full hover:bg-escuro hover:text-fundo duration-300"><a
+                href="obrigado.html">Salvar</a></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="source/script.js"></script>
+</body>
+
+</html>
