@@ -42,3 +42,14 @@ document.getElementById("btnVoltar").addEventListener("click", function (e) {
   formEmail.classList.add("opacity-0", "translate-y-20", "pointer-events-none");
   formEmail.classList.remove("opacity-100", "translate-y-0");
 });
+
+function toggleFaq(index) {
+    const answers = document.querySelectorAll('.faq-answer');
+    answers.forEach((el, i) => {
+      if (i === index) {
+        el.classList.toggle('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    });
+  }

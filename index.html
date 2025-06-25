@@ -55,6 +55,8 @@
             <li><a href="#contato"><span class="link link-underline link-underline-black">Contato</span></a></li>
             <hr class="border-escuro border-1 h-5">
             <li><a href="#localização"><span class="link link-underline link-underline-black">Localização</span></a></li>
+            <hr class="border-escuro border-1 h-5">
+            <li><a href="#perguntas"><span class="link link-underline link-underline-black">Dúvidas</span></a></li>
         </ul>
         </div>
     </nav>
@@ -118,6 +120,56 @@
        </div>
     </section>
 
+    <section id="perguntas" class="bg-fundo py-10 border-b-1">
+        <div class="container mx-auto flex flex-col items-center">
+            <h2 class="text-3xl text-center font-principal font-bold text-escuro mb-8 w-full">Perguntas Frequentes</h2>
+    
+            <div class="flex items-center space-x-4 mb-8 w-full justify-center">
+                <div class="space-y-4 w-[50%]">
+                    <div class="rounded-md overflow-hidden">
+                        <button onclick="toggleFaq(0)"
+                            class="w-full text-left px-6 py-4 bg-escuro text-white font-semibold flex justify-between items-center">
+                            Preciso ser espírita para receber atendimento na Casa de Francisco?
+                            <span>▾</span>
+                        </button>
+                        <div
+                            class="faq-answer hidden transition-all duration-300 ease-in-out px-6 py-4 bg-white text-escuro">
+                            Não. A Casa de Francisco acolhe a todos que buscam auxílio espiritual ou material,
+                            independentemente de religião, crença ou condição social. O atendimento é feito com base na
+                            fraternidade e no amor ao próximo.
+                        </div>
+                    </div>
+    
+                    <div class="rounded-md overflow-hidden">
+                        <button onclick="toggleFaq(1)"
+                            class="w-full text-left px-6 py-4 bg-escuro text-white font-semibold flex justify-between items-center">
+                            Como posso contribuir com a Casa de Francisco?
+                            <span>▾</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 py-4 bg-white text-escuro">
+                            Você pode ajudar de diversas formas: tornando-se voluntário, fazendo doações financeiras,
+                            contribuindo com alimentos, roupas, itens de higiene ou ainda divulgando nosso trabalho. Toda
+                            ajuda é bem-vinda e faz diferença!
+                        </div>
+                    </div>
+    
+                    <div class="rounded-md overflow-hidden">
+                        <button onclick="toggleFaq(2)"
+                            class="w-full text-left px-6 py-4 bg-escuro text-white font-semibold flex justify-between items-center">
+                            Os atendimentos espirituais são gratuitos?
+                            <span>▾</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 py-4 bg-white text-escuro">
+                            Sim. Todos os atendimentos oferecidos pela Casa de Francisco, como passe espiritual, orientações
+                            fraternas e reuniões doutrinárias, são gratuitos, seguindo os princípios da caridade e do
+                            Evangelho.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contato">
         <div class="container mx-auto flex flex-col items-center justify-center gap-4 text-escuro pt-10 pb-30">
             <h1 class="text-4xl font-bold">Como ajudar?</h1>
@@ -177,6 +229,7 @@
         </div>
     </footer>
 
+    <script src="source/script.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script>
         var swiper = new Swiper(".mySwiper", {
